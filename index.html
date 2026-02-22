@@ -1,83 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Restaurante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Restaurante</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
         <img src="assets/images/logo.png" alt="Logo do Restaurante">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre nós</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cardápio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Local</a>
-        </li>
-        
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-        <button class="btn btn-primary type="submit">Buscar</button>
-      </form>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#local">Local</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+          <button class="btn btn-primary type=" submit">Buscar</button>
+        </form>
+      </div>
     </div>
-  </div>
   </nav>
 
-  <div id="carousel-restaurant" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+  <main>
+
+    <header id="carousel-restaurant" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-restaurant" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/5876/food-salad-healthy-vegetables.jpg" class="d-block w-100"
+            alt="Primeira Imagem do Carrousel">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Explosão de cores e nutrientes.</h5>
+            <p>Comece sua refeição com o pé direito: bowls nutritivos, grãos selecionados e o toque único dos nossos temperos da casa. 
+              Qualidade que você vê e sabor que você sente em cada detalhe.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/3201922/pexels-photo-3201922.jpeg"
+            class="d-block w-100" alt="Segunda Imagem do Carrousel">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Uma vista tão inesquecível quanto o prato.</h5>
+            <p>Desfrute de uma experiência gastronômica completa em um ambiente sofisticado e acolhedor. O cenário perfeito para celebrar suas grandes conquistas sob a luz de 
+              nossos lustres.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/8471716/pexels-photo-8471716.jpeg" class="d-block w-100" alt="Terceira Imagem do Carrousel">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Uma viagem de sabores em cada mordida.</h5>
+            <p>Descubra a autenticidade da nossa cozinha temática. Cores vibrantes, temperos marcantes e ingredientes frescos que trazem a cultura direto para o seu paladar.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-restaurant" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-restaurant" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </header>
+
+    <section id="about" class="container text-center mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=1013&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Melhor tempero da cidade!</h5>
+                  <p class="card-text">"O cuidado com a apresentação é incrível, mas o sabor supera tudo. A carne estava no ponto perfeito e o manjericão dá um aroma que conquista antes da primeira garfada."</p>
+                  <p class="card-text"><small class="text-body-secondary">Ricardo Simões — 5 dias atrás</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="https://images.unsplash.com/photo-1615865417491-9941019fbc00?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Saboroso e muito leve</h5>
+                  <p class="card-text">"Finalmente um bowl que não é sem graça! Os grãos são bem temperados e os vegetais têm aquele gostinho de grelhado na hora. Virou meu almoço favorito da semana."</p>
+                  <p class="card-text"><small class="text-body-secondary">Mariana Leão — 1 mês atrás</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="menu" class="container mb-5 mt-5">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">Pratos Feitos</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">Sobremesa</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+          role="tab" aria-controls="contact-tab-pane" aria-selected="false">Bebidas</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active mt-4" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+        tabindex="0">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card card-menu">
+              <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg" class="card-img-top" alt="Bulhogui">
+              <div class="card-body">
+                <h5 class="card-title">Bulhogui</h5>
+                <p class="card-text">Fatias finas de carne bovina marinadas em um molho levemente adocicado à base de soja, alho e óleo de gergelim. 
+                  Servido em uma chapa quente, é acompanhado por vegetais e cebolinha, oferecendo um equilíbrio perfeito entre o salgado e o doce.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-menu">
+              <img src="https://images.pexels.com/photos/628776/pexels-photo-628776.jpeg" class="card-img-top" alt="Sashimi de Salmão Trufado e Curry Laksa">
+              <div class="card-body">
+                <h5 class="card-title">Sashimi de Salmão Trufado e Curry Laksa</h5>
+                <p class="card-text">À esquerda, um carpaccio de salmão fresco finalizado com brotos e um toque de molho cítrico. Ao fundo, uma vibrante tigela de 
+                  Curry Laksa (sopa de macarrão picante), rica em especiarias aromáticas, leite de coco e finalizada com cebola roxa e ervas frescas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-menu">
+              <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" class="card-img-top" alt="Espaguete Integral com Tomates e Manjericão">
+              <div class="card-body">
+                <h5 class="card-title">Espaguete Integral com Tomates e Manjericão</h5>
+                <p class="card-text">Massa integral al dente envolvida em um molho leve de tomates cereja assados, folhas de manjericão fresco e cubos de queijo 
+                  (estilo feta ou muçarela de búfala). Uma opção saudável, rústica e cheia de frescor para qualquer momento do dia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-4" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg" class="card-img-top" alt="Cheesecake de Frutas Vermelhas">
+              <div class="card-body">
+                <h5 class="card-title">Cheesecake de Frutas Vermelhas</h5>
+                <p class="card-text">Fatias generosas de cheesecake cremoso com base de biscoito crocante, recheadas com mirtilos e finalizadas com uma seleção fresca de 
+                  amoras, framboesas e groselhas. Uma explosão de texturas e o equilíbrio perfeito entre o doce e a acidez das frutas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg" class="card-img-top" alt="Brownie de Chocolate Belga">
+              <div class="card-body">
+                <h5 class="card-title">Brownie de Chocolate Belga</h5>
+                <p class="card-text">Um brownie denso e úmido por dentro, com a característica crosta fininha por cima. Servido com uma calda generosa de chocolate amargo 
+                  que envolve toda a peça, garantindo uma experiência intensamente saborosa para os amantes do cacau.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg" class="card-img-top" alt="Mix de Gelato Artesanal">
+              <div class="card-body">
+                <h5 class="card-title">Mix de Gelato Artesanal</h5>
+                <p class="card-text">Bolas de sorvete artesanal nos sabores morango e baunilha, servidas em potinhos coloridos e acompanhadas de casquinhas crocantes. 
+                  O toque final fica por conta do festival de granulados coloridos e pedaços de chocolate, trazendo alegria e cor à mesa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade mt-4" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg" class="card-img-top" alt="Bar de Destilados Premium">
+              <div class="card-body">
+                <h5 class="card-title">Bar de Destilados Premium</h5>
+                <p class="card-text">Uma seleção exclusiva de whiskies, gins e licores internacionais. Perfeito para quem aprecia a complexidade de um destilado puro ou a 
+                  base ideal para coquetéis clássicos, apresentados em um ambiente elegante e acolhedor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/274131/pexels-photo-274131.jpeg" class="card-img-top" alt="Poções de Neon">
+              <div class="card-body">
+                <h5 class="card-title">Poções de Neon</h5>
+                <p class="card-text">Experiência sensorial única com drinks servidos em garrafas iluminadas por LED. Essas misturas vibrantes combinam sabores exóticos e 
+                  efeitos visuais neon, transformando o brinde em uma atração tecnológica e inesquecível.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://images.pexels.com/photos/2531188/pexels-photo-2531188.jpeg" class="card-img-top" alt="Coquetéis Tropicais e Shots Coloridos">
+              <div class="card-body">
+                <h5 class="card-title">Coquetéis Tropicais e Shots Coloridos</h5>
+                <p class="card-text">Uma explosão de cores e frescor com drinks em camadas, decorados com guarda-sóis e frutas cítricas. Dos shots refrescantes aos long drinks tropicais, é a escolha certa para animar qualquer evento com leveza e sabor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+    </section>
+
+    <section id="local" class="container text-center mb-5">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localModal">
+      Quero conhecer o NossaMesa
+    </button>
+
+    <!-- localModal -->
+    <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Venha nos visitar!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Esperamos você na Rua Justiniano, 366 - Xique-Xique, Bahia</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4660.254349193545!2d-42.73037097284127!3d-10.827286744713605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x765921521a3a289%3A0xd0bc236aee3dda01!2sXique-Xique%2C%20BA%2C%2047400-000!5e0!3m2!1spt-BR!2sbr!4v1753482683980!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://images.pexels.com/photos/8471716/pexels-photo-8471716.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-restaurant" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-restaurant" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </section>
+
+  </main>
+
+  <footer class="text-center p-5 mt-5">
+    <img src="assets/images/logo.png" width="120px" alt="Logo">
+    <p class="">
+    <i>Servindo você com excelência em NossaMesa!<br>
+    (74) 9992-0007</i>
+    </p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
